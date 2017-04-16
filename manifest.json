@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Food Health",
+  "description": "This extension allows you to find the number of calories in a food item found on your webpage and how much of a specific exercise is needed to burn those calories.",
+  "version": "1.1",
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html"
+  },
+"background": {
+  "scripts": ["eventPage.js"],
+  "persistent": false
+},
+"permissions": [
+  "tabs",
+  "contextMenus"
+]
+}
